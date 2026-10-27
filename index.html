@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RideReady - plan smarter, ride farther, and make every kilometer count.">
+    <meta name="theme-color" content="#080B0E">
+    <title>RideReady | Every Ride Starts with a Plan</title>
+
+    <!-- Font & ikon disimpan lokal jadi tetap jalan tanpa internet -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+    <nav class="navbar navbar-expand-lg fixed-top rr-nav" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand rr-logo" href="#home">Ride<span>Ready</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama"
+                aria-controls="menuUtama" aria-expanded="false" aria-label="Open menu">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menuUtama">
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#styles">Ride Styles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planner">Ride Planner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#essentials">Essentials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                </ul>
+                <a href="#planner" class="btn btn-rr">Plan Your Ride</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" aria-labelledby="heroTitle">
+            <img class="hero-bg" src="img/hero-sunset.jpg" alt="" fetchpriority="high">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-inner">
+                <span class="badge-ready glass"><span class="dot"></span> READY TO RIDE</span>
+
+                <h1 class="hero-title" id="heroTitle">Every Ride<br>Starts with <span class="accent">a&nbsp;Plan.</span></h1>
+
+                <div class="row g-4 align-items-end hero-bottom">
+                    <div class="col-lg-6">
+                        <div class="hero-copy glass">
+                            <p class="hero-desc">Plan smarter, ride farther, and make every kilometer count. Work out your moving time and calories before you roll out.</p>
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <a href="#planner" class="btn btn-rr btn-lg">Plan Your Ride</a>
+                                <a href="#essentials" class="btn btn-ghost btn-lg">Explore Essentials</a>
+                            </div>
+                            <ul class="hero-points">
+                                <li><a href="#styles"><i class="bi bi-signpost-split"></i> Pick your style</a></li>
+                                <li><a href="#planner"><i class="bi bi-stopwatch"></i> Moving time</a></li>
+                                <li><a href="#planner"><i class="bi bi-fire"></i> Calories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="hero-stats glass" role="group" aria-label="Sample ride">
+                            <span class="stats-label">SAMPLE RIDE &middot; 30 km @ 20 km/h</span>
+                            <div class="stats-row">
+                                <div><strong>1<small>h</small> 30<small>min</small></strong><span>Moving time</span></div>
+                                <div><strong>630<small>kcal</small></strong><span>Burned (60 kg)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ANIMASI MARQUEE ================= -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Plan</span><i></i><span>Ride</span><i></i><span>Repeat</span><i></i>
+                <span>Plan</span><i></i><span>Ride</span><i></i><span>Repeat</span><i></i>
+                <span>Plan</span><i></i><span>Ride</span><i></i><span>Repeat</span><i></i>
+                <span>Plan</span><i></i><span>Ride</span><i></i><span>Repeat</span><i></i>
+            </div>
+        </div>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="py-section" id="about">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-center">
+                    <div class="col-lg-5 reveal">
+                        <figure class="photo-card">
+                            <img src="img/about-blur.jpg" alt="Cyclist leaning into a fast corner with motion blur" loading="lazy">
+                            <figcaption class="glass">Speed is easier to love when you know the numbers.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="reveal">
+                            <span class="eyebrow">HOW IT WORKS</span>
+                            <h2 class="section-title">Three steps. <span class="accent">Zero</span> guesswork.</h2>
+                        </div>
+                        <div class="steps">
+                            <article class="card-rr step reveal">
+                                <span class="step-no">01</span>
+                                <div>
+                                    <h3 class="h5">Plan your route</h3>
+                                    <p>Decide your ride style and distance first, so you know what to expect before you leave.</p>
+                                </div>
+                            </article>
+                            <article class="card-rr step reveal">
+                                <span class="step-no">02</span>
+                                <div>
+                                    <h3 class="h5">Estimate your moving time</h3>
+                                    <p>Distance and average speed give you a clear moving time, an arrival time, and a calorie estimate.</p>
+                                </div>
+                            </article>
+                            <article class="card-rr step reveal">
+                                <span class="step-no">03</span>
+                                <div>
+                                    <h3 class="h5">Prepare your essentials</h3>
+                                    <p>Tick off a simple checklist so nothing important gets left at home.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= RIDE STYLE ================= -->
+        <section class="py-section pt-0" id="styles">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5 reveal">
+                    <div>
+                        <span class="eyebrow">RIDE STYLES</span>
+                        <h2 class="section-title mb-0">Find your <span class="accent">ride style.</span></h2>
+                    </div>
+                    <p class="lead-text mb-0">Pick the kind of ride you want first, then plan it below.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4 reveal">
+                        <article class="style-card h-100" data-type="Leisure">
+                            <img src="img/ride-leisure.jpg" alt="Relaxed ride on an open road" loading="lazy">
+                            <div class="style-body glass">
+                                <h3 class="h4">Leisure Ride</h3>
+                                <p>Take it easy and enjoy the scenery. No pressure, just the pleasure of being outside.</p>
+                                <button type="button" class="btn btn-outline-rr w-100 choose-btn">Choose This Ride</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4 reveal">
+                        <article class="style-card h-100" data-type="Fitness">
+                            <img src="img/ride-fitness.jpg" alt="Black and white close-up of a cyclist in a white helmet" loading="lazy">
+                            <div class="style-body glass">
+                                <h3 class="h4">Fitness Ride</h3>
+                                <p>Build a steady habit that keeps your body strong and your energy up.</p>
+                                <button type="button" class="btn btn-outline-rr w-100 choose-btn">Choose This Ride</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4 reveal">
+                        <article class="style-card h-100" data-type="Training">
+                            <img src="img/ride-training.jpg" alt="Focused cyclist in a helmet and visor" loading="lazy">
+                            <div class="style-body glass">
+                                <h3 class="h4">Training Ride</h3>
+                                <p>Work on speed and endurance with a ride that has a clear purpose.</p>
+                                <button type="button" class="btn btn-outline-rr w-100 choose-btn">Choose This Ride</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= RIDE PLANNER ================= -->
+        <section class="py-section" id="planner">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-start">
+                    <div class="col-lg-5 reveal">
+                        <span class="eyebrow">RIDE PLANNER</span>
+                        <h2 class="section-title">Know your ride <span class="accent">before</span> you roll out.</h2>
+                        <p class="lead-text">Enter your distance and average speed. We will work out your moving time (how long you are actually pedaling), your calories, and what to bring.</p>
+                    </div>
+
+                    <div class="col-lg-7 reveal">
+                        <div class="card-rr planner">
+                            <h3 class="h4 mb-4">Plan Your Next Ride</h3>
+                            <form id="plannerForm" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="distance" class="form-label">Distance (km)</label>
+                                        <input type="number" class="form-control" id="distance" min="0" step="0.1" placeholder="e.g. 30">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="departure" class="form-label">Departure time <small class="text-muted">(optional)</small></label>
+                                        <input type="time" class="form-control" id="departure">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="weight" class="form-label">Body weight (kg) <small class="text-muted">(optional, for calories)</small></label>
+                                        <input type="number" class="form-control" id="weight" min="1" max="300" step="0.1" placeholder="e.g. 60">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <span class="form-label d-block">Average speed (km/h)</span>
+                                        <div class="pill-group" role="radiogroup" aria-label="Average speed">
+                                            <input type="radio" name="speed" id="s10" value="10"><label for="s10">10</label>
+                                            <input type="radio" name="speed" id="s15" value="15"><label for="s15">15</label>
+                                            <input type="radio" name="speed" id="s20" value="20"><label for="s20">20</label>
+                                            <input type="radio" name="speed" id="s25" value="25"><label for="s25">25</label>
+                                            <input type="radio" name="speed" id="s30" value="30"><label for="s30">30</label>
+                                        </div>
+                                        <div class="custom-speed mt-3">
+                                            <label for="customSpeed" class="form-label mb-1">Or enter your own average speed</label>
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" id="customSpeed" min="1" max="80" step="0.1" placeholder="e.g. 18.5">
+                                                <span class="input-group-text">km/h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <span class="form-label d-block">Ride type</span>
+                                        <div class="pill-group" role="radiogroup" aria-label="Ride type">
+                                            <input type="radio" name="type" id="tLeisure" value="Leisure"><label for="tLeisure">Leisure</label>
+                                            <input type="radio" name="type" id="tFitness" value="Fitness"><label for="tFitness">Fitness</label>
+                                            <input type="radio" name="type" id="tTraining" value="Training"><label for="tTraining">Training</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p id="formError" class="form-error" role="alert" hidden></p>
+
+                                <div class="d-flex flex-wrap gap-2 mt-4">
+                                    <button type="submit" class="btn btn-rr">Calculate My Ride</button>
+                                    <button type="button" class="btn btn-outline-rr" id="resetPlanner">Reset</button>
+                                </div>
+                            </form>
+
+                            <div id="result" class="result" hidden aria-live="polite">
+                                <div class="row g-3">
+                                    <div class="col-sm-6"><div class="result-box"><small>Moving time</small><strong id="resDuration"></strong></div></div>
+                                    <div class="col-sm-6"><div class="result-box"><small>Arrival time</small><strong id="resArrival"></strong></div></div>
+                                    <div class="col-sm-6"><div class="result-box"><small>Ride type</small><strong id="resType"></strong></div></div>
+                                    <div class="col-sm-6"><div class="result-box"><small>Calories burned (estimate)</small><strong id="resCalories"></strong><span class="cal-note" id="resCalNote"></span></div></div>
+                                </div>
+                                <h4 class="h6 mt-4">Your checklist for this ride</h4>
+                                <ul id="resChecklist" class="check-list"></ul>
+                                <p class="note"><i class="bi bi-info-circle"></i> Moving time = distance &divide; average speed. It counts only the time you are rolling, so terrain, traffic, weather, and rest stops are not included. Calories = MET &times; body weight (kg) &times; duration (hours), a rough estimate only.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MOTION / VIDEO + RUMUS ================= -->
+        <section class="py-section pt-0" id="motion">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-center">
+                    <div class="col-lg-5 col-xl-4 reveal">
+                        <div class="video-frame glass">
+                            <video id="motionVideo" muted loop playsinline preload="metadata" poster="img/motion-poster.jpg" aria-label="Cyclists riding fast on a country road">
+                                <source src="media/motion.webm" type="video/webm">
+                                <source src="media/motion.mp4" type="video/mp4">
+                            </video>
+                            <button type="button" class="video-toggle glass" id="videoToggle" aria-label="Pause video"><i class="bi bi-pause-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="reveal">
+                            <span class="eyebrow">THE MATH BEHIND IT</span>
+                            <h2 class="section-title">Know the numbers. <span class="accent">Feel</span> the ride.</h2>
+                            <p class="lead-text">Two simple formulas power the planner. No black box, just a little arithmetic.</p>
+                        </div>
+
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-6 reveal">
+                                <div class="card-rr formula h-100">
+                                    <i class="bi bi-stopwatch"></i>
+                                    <h3 class="h6">Moving time</h3>
+                                    <code>distance &divide; avg speed</code>
+                                    <p>30 km at 20 km/h is 1.5 hours of pedaling.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 reveal">
+                                <div class="card-rr formula h-100">
+                                    <i class="bi bi-fire"></i>
+                                    <h3 class="h6">Calories burned</h3>
+                                    <code>MET &times; kg &times; hours</code>
+                                    <p>MET is how intense the ride is, picked from your speed.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 reveal">
+                                <div class="met-table card-rr">
+                                    <span class="met-title">MET by pace</span>
+                                    <ul>
+                                        <li><b>&lt; 16</b> km/h <em>Easy</em> <strong>MET 4&ndash;6</strong></li>
+                                        <li><b>16&ndash;22</b> km/h <em>Moderate</em> <strong>MET 6&ndash;8</strong></li>
+                                        <li><b>&gt; 22</b> km/h <em>Fast</em> <strong>MET 10&ndash;12</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ESSENTIALS ================= -->
+        <section class="py-section pt-0" id="essentials">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-center">
+                    <div class="col-lg-5 reveal">
+                        <span class="eyebrow">RIDE ESSENTIALS</span>
+                        <h2 class="section-title">Pack once. <span class="accent">Ride</span> worry-free.</h2>
+                        <p class="lead-text">Check each item as you pack it and watch your progress fill up.</p>
+
+                        <div class="progress-wrap">
+                            <div class="d-flex justify-content-between mb-2">
+                                <strong id="progressText">0 of 6 essentials ready</strong>
+                                <span id="progressPct">0%</span>
+                            </div>
+                            <div class="progress rr-progress" role="progressbar" aria-label="Essentials progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" id="progressBar" style="width:0%"></div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-rr mt-4" id="resetChecklist">Reset Checklist</button>
+                    </div>
+
+                    <div class="col-lg-7 reveal">
+                        <div class="row g-3" id="essentialsList">
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-shield-check"></i></span><span>Helmet</span></label></div>
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-droplet"></i></span><span>Water bottle</span></label></div>
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-lightbulb"></i></span><span>Front and rear lights</span></label></div>
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-tools"></i></span><span>Repair kit</span></label></div>
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-phone"></i></span><span>Phone and identification</span></label></div>
+                            <div class="col-sm-6"><label class="ess"><input type="checkbox"><span class="ess-icon"><i class="bi bi-brightness-high"></i></span><span>Sunscreen</span></label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CLOSING CTA ================= -->
+        <section class="closing">
+            <img class="closing-bg" src="img/closing-bw.jpg" alt="Two cyclists leaning through a mountain corner, black and white" loading="lazy">
+            <div class="closing-shade"></div>
+            <div class="container">
+                <div class="closing-box glass reveal">
+                    <h2 class="section-title mb-3">Less Guessing. <span class="accent">More Riding.</span></h2>
+                    <p class="lead-text mx-auto">Your next great ride begins with a little preparation.</p>
+                    <a href="#planner" class="btn btn-rr btn-lg">Plan Your Next Ride <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- ================= FORM ISIAN SESUAI SOAL UTS PAK SETYO ================= -->
+        <section class="py-section" id="register" aria-labelledby="registerTitle">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-start">
+                    <div class="col-lg-5 reveal">
+                        <span class="eyebrow">JOIN THE RIDE</span>
+                        <h2 class="section-title" id="registerTitle">Tell us <span class="accent">about you.</span></h2>
+                        <p class="lead-text">Fill in your details and pick the hobbies you enjoy. It only takes a minute.</p>
+                    </div>
+
+                    <div class="col-lg-7 reveal">
+                        <div class="card-rr planner">
+                            <h3 class="h4 mb-4">Data Diri</h3>
+                            <form id="registerForm" novalidate>
+                                <div class="row g-3">
+                                    <!-- a. Name input type text -->
+                                    <div class="col-12">
+                                        <label for="nama" class="form-label">Nama</label>
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap">
+                                    </div>
+
+                                    <!-- b. Address textarea -->
+                                    <div class="col-12">
+                                        <label for="alamat" class="form-label">Alamat</label>
+                                        <textarea class="form-control" id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap"></textarea>
+                                    </div>
+
+                                    <!-- c. City select -->
+                                    <div class="col-12">
+                                        <label for="kota" class="form-label">Kota</label>
+                                        <select class="form-select" id="kota" name="kota">
+                                            <option value="" selected>Pilih kota</option>
+                                            <option value="Semarang">Semarang</option>
+                                            <option value="Kudus">Kudus</option>
+                                            <option value="Demak">Demak</option>
+                                            <option value="Pekalongan">Pekalongan</option>
+                                            <option value="Tegal">Tegal</option>
+                                            <option value="Surabaya">Surabaya</option>
+                                            <option value="Jakarta">Jakarta</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- d. Hobby : checkbox -->
+                                    <div class="col-12">
+                                        <fieldset>
+                                            <legend class="form-label">Hobi</legend>
+                                            <div class="row g-2 hobi-group">
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="hobi" value="Membaca" id="hobiMembaca">
+                                                        <label class="form-check-label" for="hobiMembaca">Membaca</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="hobi" value="Koding" id="hobiKoding">
+                                                        <label class="form-check-label" for="hobiKoding">Koding</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="hobi" value="Berenang" id="hobiBerenang">
+                                                        <label class="form-check-label" for="hobiBerenang">Berenang</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="hobi" value="Menggambar" id="hobiMenggambar">
+                                                        <label class="form-check-label" for="hobiMenggambar">Menggambar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <p id="registerError" class="form-error" role="alert" hidden></p>
+
+                                <div class="d-flex flex-wrap gap-2 mt-4">
+                                    <button type="submit" class="btn btn-rr">Kirim</button>
+                                    <button type="reset" class="btn btn-outline-rr" id="resetRegister">Reset</button>
+                                </div>
+                            </form>
+
+                            <div id="registerResult" class="result" hidden aria-live="polite">
+                                <h4 class="h6 mb-3">Data that you submitted</h4>
+                                <ul class="reg-summary">
+                                    <li><small>Nama</small><strong id="outNama"></strong></li>
+                                    <li><small>Alamat</small><strong id="outAlamat"></strong></li>
+                                    <li><small>Kota</small><strong id="outKota"></strong></li>
+                                    <li><small>Hobi</small><strong id="outHobi"></strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="rr-footer">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                    <a class="rr-logo" href="#home">Ride<span>Ready</span></a>
+                    <p class="mb-0 mt-1 text-muted">Made for the joy of riding.</p>
+                </div>
+                <div class="col-md-7">
+                    <ul class="list-inline mb-0 text-md-end foot-links">
+                        <li class="list-inline-item"><a href="#home">Home</a></li>
+                        <li class="list-inline-item"><a href="#about">About</a></li>
+                        <li class="list-inline-item"><a href="#styles">Ride Styles</a></li>
+                        <li class="list-inline-item"><a href="#planner">Ride Planner</a></li>
+                        <li class="list-inline-item"><a href="#essentials">Essentials</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- ========== CREDIT ========== -->
+            <div class="credit">
+                <p class="credit-main">By <strong>Kanaka Tabina</strong> &middot; A12.2025.07359 &middot; A12.6301 / Universitas Dian Nuswantoro</p>
+                <p class="credit-sub">Built with HTML, CSS &amp; JavaScript &mdash; PWD / Mid Exam, 2026</p>
+            </div>
+            <!-- ================================================================================= -->
+
+            <small class="text-muted d-block">&copy; <span id="year">2026</span> RideReady. Photos &amp; video belong to their respective owners and are used here for coursework purposes only.</small>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
